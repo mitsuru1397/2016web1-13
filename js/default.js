@@ -26,3 +26,39 @@ var refresh = function(){
  setTimeout(update, 1000);
 }
 update();
+
+function setCookie(c_name,value,expireday){
+ var extime = new Date().getTime();
+ var cltime = new Date(extime + (60*60*24*expiredays));
+ var exdate = cltime.toUTCSStiring():
+ 
+ var s="";
+ s += c_name +"="+ escape(value);
+ s += "; path="+ location.pathname;
+ if(expiredays){
+  s += "; epires=" +epdate"; ";
+ }else{
+  s += "; ";
+ }
+ 
+ document.cookie=s;
+}
+
+function getCookie(c_name){
+ var st="";
+ var ed="";
+ if(0 < document.cookie.length){
+  st=document.cookie.indexOf(c_name + "=");
+  if(st!=-1){
+   st=st+c_name.length+1;
+   ed=document.cookie.legth;
+   if(ed==-1) ed=document.cookie.lenghth;
+   
+   return unescape(document.cookie.substring(st,ed));
+  }
+ }
+ return "";
+}
+
+
+
