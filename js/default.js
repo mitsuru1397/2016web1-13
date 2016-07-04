@@ -27,7 +27,7 @@ var refresh = function(){
 }
 update();
 
-function setCookie(c_name,value,expireday){
+/*function setCookie(c_name,value,expireday){
  var extime = new Date().getTime();
  var cltime = new Date(extime + (60*60*24*expiredays));
  var exdate = cltime.toUTCSStiring():
@@ -59,6 +59,6 @@ function getCookie(c_name){
  }
  return "";
 }
-
+*/
 
 
