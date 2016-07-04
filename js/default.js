@@ -27,6 +27,10 @@ var refresh = function(){
 }
 update();
 
+document.getElementById('form').select.onchange = function(){
+ location.href = document.getElement('form').select.value;
+}
+
 /*function setCookie(c_name,value,expireday){
  var extime = new Date().getTime();
  var cltime = new Date(extime + (60*60*24*expiredays));
