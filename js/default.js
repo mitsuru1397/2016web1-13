@@ -27,6 +27,10 @@ var refresh = function(){
 }
 update();
 
+function getFileName() {
+ return window.location.href.split('/').pop();
+}
+
 var filename = getFileName();
 var opt;
 if(filename === 'other.html'){
