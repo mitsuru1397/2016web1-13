@@ -28,7 +28,7 @@ var refresh = function(){
 update();
 
 document.getElementById('form').select.onchange = function(){
- location.href = document.getElement('form').select.value;
+ location.href = document.getElementById('form').select.value;
 }
 
 /*function setCookie(c_name,value,expireday){
